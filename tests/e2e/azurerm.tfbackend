@@ -1,5 +1,5 @@
 environment          = "public"
-subscription_id      = "e82c5267-9dc4-4f45-ac13-abdd5e130d27"
+subscription_id      = "64d97042-a8b5-4033-b2d1-4bbda40c8a91"
 resource_group_name  = "rg-terraform"
 storage_account_name = "terraformststg001"
 container_name       = "data-landing-zone"
