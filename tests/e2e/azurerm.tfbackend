@@ -1,7 +1,7 @@
 environment          = "public"
 subscription_id      = "64d97042-a8b5-4033-b2d1-4bbda40c8a91"
 resource_group_name  = "rg-terraform"
-storage_account_name = "chkterraformstdev001"
+storage_account_name = "chkterraformst001"
 container_name       = "data-landing-zone"
 key                  = "terraform.tfstate"
 use_azuread_auth     = true
