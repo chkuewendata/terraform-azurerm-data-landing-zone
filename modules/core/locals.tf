@@ -41,12 +41,6 @@ locals {
       workspace_url       = module.databricks_workspace_engineering.databricks_workspace_workspace_url
       access_connector_id = module.databricks_access_connector_engineering.databricks_access_connector_id
     }
-    consumption = {
-      id                  = module.databricks_workspace_consumption.databricks_workspace_id
-      workspace_id        = module.databricks_workspace_consumption.databricks_workspace_workspace_id
-      workspace_url       = module.databricks_workspace_consumption.databricks_workspace_workspace_url
-      access_connector_id = module.databricks_access_connector_consumption.databricks_access_connector_id
-    }
   }
   databricks_private_endpoint_rules = {
     "storage-account-external-blob" = {
