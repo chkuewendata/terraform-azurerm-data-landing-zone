@@ -18,8 +18,7 @@ output "databricks_private_endpoint_rules" {
 output "databricks_dependencies" {
   description = "Specifies the dependencies for Databricks."
   value = [
-    module.databricks_workspace_engineering.databricks_workspace_completed,
-    module.databricks_workspace_consumption.databricks_workspace_completed,
+    module.databricks_workspace_engineering.databricks_workspace_completed
   ]
 }
 
