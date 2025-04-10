@@ -1,12 +1,12 @@
 name: "dptest"
 environment: "dev"
 tags:
-  cost_center: "ABCD1234"
+  cost_center: "ABCD5678"
 
 identity:
-  admin_group_name: "app001-admin"
-  developer_group_name: "app001-developer"
-  reader_group_name: "app001-reader"
+  admin_group_name: "app002-admin"
+  developer_group_name: "app002-developer"
+  reader_group_name: "app002-reader"
   # service_principal_name: "app001-sp"
 
 network:
