@@ -1,5 +1,7 @@
 name: Data Landing Zone Deployment
 on:
+  workflow_dispatch:
+
   push:
     branches:
       - main

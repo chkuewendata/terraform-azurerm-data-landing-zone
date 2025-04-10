@@ -1,5 +1,5 @@
 name: "dptest"
-environment: "prd"
+environment: "dev"
 tags:
   cost_center: "ABCD1234"
 
@@ -17,7 +17,7 @@ repository:
   type: github
   github:
     git_url: "https://github.com"
-    account_name: "PerfectThymeTech"
+    account_name: "chkuewendata"
     branch_name: main
     repository_name: "terraform-azurerm-data-landing-zone"
     data_factory_root_folder: "/code/datafactory"
