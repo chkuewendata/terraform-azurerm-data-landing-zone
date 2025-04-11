@@ -150,26 +150,6 @@ variable "subnet_id_engineering_public" {
   }
 }
 
-variable "subnet_id_consumption_private" {
-  description = "Specifies the id of the private subnet used for the databricks workspace for ad-hoc consumption."
-  type        = string
-  sensitive   = false
-  validation {
-    condition     = length(split("/", var.subnet_id_consumption_private)) == 11
-    error_message = "Please specify a valid resource ID."
-  }
-}
-
-variable "subnet_id_consumption_public" {
-  description = "Specifies the id of the public subnet used for the databricks workspace for ad-hoc consumption."
-  type        = string
-  sensitive   = false
-  validation {
-    condition     = length(split("/", var.subnet_id_consumption_public)) == 11
-    error_message = "Please specify a valid resource ID."
-  }
-}
-
 variable "connectivity_delay_in_seconds" {
   description = "Specifies the delay in seconds after the private endpoint deployment (required for the DNS automation via Policies)."
   type        = number

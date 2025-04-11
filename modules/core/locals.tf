@@ -32,8 +32,6 @@ locals {
   # Databricks locals
   databricks_engineering_private_subnet_name = reverse(split("/", var.subnet_id_engineering_private))[0]
   databricks_engineering_public_subnet_name  = reverse(split("/", var.subnet_id_engineering_public))[0]
-  databricks_consumption_private_subnet_name = reverse(split("/", var.subnet_id_consumption_private))[0]
-  databricks_consumption_public_subnet_name  = reverse(split("/", var.subnet_id_consumption_public))[0]
   databricks_workspace_details = {
     engineering = {
       id                  = module.databricks_workspace_engineering.databricks_workspace_id
