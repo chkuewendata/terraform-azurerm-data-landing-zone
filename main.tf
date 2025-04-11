@@ -20,8 +20,6 @@ module "platform" {
   subnet_cidr_range_fabric              = var.subnet_cidr_ranges.fabric_subnet
   subnet_cidr_range_engineering_private = var.subnet_cidr_ranges.databricks_engineering_private_subnet
   subnet_cidr_range_engineering_public  = var.subnet_cidr_ranges.databricks_engineering_public_subnet
-  subnet_cidr_range_consumption_private = var.subnet_cidr_ranges.databricks_consumption_private_subnet
-  subnet_cidr_range_consumption_public  = var.subnet_cidr_ranges.databricks_consumption_public_subnet
   subnet_cidr_range_applications = {
     for key, value in local.data_application_definitions :
     key => {
@@ -66,8 +64,6 @@ module "core" {
   subnet_id_storage             = module.platform.subnet_id_storage
   subnet_id_engineering_private = module.platform.subnet_id_engineering_private
   subnet_id_engineering_public  = module.platform.subnet_id_engineering_public
-  subnet_id_consumption_private = module.platform.subnet_id_consumption_private
-  subnet_id_consumption_public  = module.platform.subnet_id_consumption_public
   connectivity_delay_in_seconds = local.connectivity_delay_in_seconds
 
   # DNS variables

@@ -114,58 +114,6 @@ locals {
       serviceEndpoints        = []
     }
   }
-  subnet_consumption_private = {
-    name = "ConsumptionPrivateSubnet"
-    properties = {
-      addressPrefix         = var.subnet_cidr_range_consumption_private
-      defaultOutboundAccess = false
-      delegations = [
-        {
-          name = "DatabricksDelegation"
-          properties = {
-            serviceName = "Microsoft.Databricks/workspaces"
-          }
-        }
-      ]
-      ipAllocations = []
-      networkSecurityGroup = {
-        id = data.azurerm_network_security_group.network_security_group.id
-      }
-      privateEndpointNetworkPolicies    = "Enabled"
-      privateLinkServiceNetworkPolicies = "Enabled"
-      routeTable = {
-        id = data.azurerm_route_table.route_table.id
-      }
-      serviceEndpointPolicies = []
-      serviceEndpoints        = []
-    }
-  }
-  subnet_consumption_public = {
-    name = "ConsumptionPublicSubnet"
-    properties = {
-      addressPrefix         = var.subnet_cidr_range_consumption_public
-      defaultOutboundAccess = false
-      delegations = [
-        {
-          name = "DatabricksDelegation"
-          properties = {
-            serviceName = "Microsoft.Databricks/workspaces"
-          }
-        }
-      ]
-      ipAllocations = []
-      networkSecurityGroup = {
-        id = data.azurerm_network_security_group.network_security_group.id
-      }
-      privateEndpointNetworkPolicies    = "Enabled"
-      privateLinkServiceNetworkPolicies = "Enabled"
-      routeTable = {
-        id = data.azurerm_route_table.route_table.id
-      }
-      serviceEndpointPolicies = []
-      serviceEndpoints        = []
-    }
-  }
   subnets_private_endpoint_applications = [
     for key, value in var.subnet_cidr_range_applications :
     {

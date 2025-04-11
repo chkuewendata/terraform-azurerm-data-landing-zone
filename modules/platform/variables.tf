@@ -90,7 +90,7 @@ variable "subnet_cidr_range_engineering_private" {
   sensitive   = false
   validation {
     condition     = try(cidrnetmask(var.subnet_cidr_range_engineering_private), "invalid") != "invalid"
-    error_message = "Please specify a valid CIDR range for the consumption private subnet."
+    error_message = "Please specify a valid CIDR range for the engineering private subnet."
   }
 }
 
@@ -100,27 +100,7 @@ variable "subnet_cidr_range_engineering_public" {
   sensitive   = false
   validation {
     condition     = try(cidrnetmask(var.subnet_cidr_range_engineering_public), "invalid") != "invalid"
-    error_message = "Please specify a valid CIDR range for the consumption public subnet."
-  }
-}
-
-variable "subnet_cidr_range_consumption_private" {
-  description = "Specifies the cidr ranges of the consumption private subnet used for the Data Landing Zone."
-  type        = string
-  sensitive   = false
-  validation {
-    condition     = try(cidrnetmask(var.subnet_cidr_range_consumption_private), "invalid") != "invalid"
-    error_message = "Please specify a valid CIDR range for the consumption private subnet."
-  }
-}
-
-variable "subnet_cidr_range_consumption_public" {
-  description = "Specifies the cidr ranges of the consumption public subnet used for the Data Landing Zone."
-  type        = string
-  sensitive   = false
-  validation {
-    condition     = try(cidrnetmask(var.subnet_cidr_range_consumption_public), "invalid") != "invalid"
-    error_message = "Please specify a valid CIDR range for the consumption public subnet."
+    error_message = "Please specify a valid CIDR range for the engineering public subnet."
   }
 }
 

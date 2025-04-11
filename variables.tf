@@ -197,8 +197,6 @@ variable "subnet_cidr_ranges" {
       fabric_subnet                         = string
       databricks_engineering_private_subnet = string
       databricks_engineering_public_subnet  = string
-      databricks_consumption_private_subnet = string
-      databricks_consumption_public_subnet  = string
     }
   )
   sensitive = false
@@ -208,8 +206,6 @@ variable "subnet_cidr_ranges" {
       try(cidrnetmask(var.subnet_cidr_ranges.fabric_subnet), "invalid") != "invalid",
       try(cidrnetmask(var.subnet_cidr_ranges.databricks_engineering_private_subnet), "invalid") != "invalid",
       try(cidrnetmask(var.subnet_cidr_ranges.databricks_engineering_public_subnet), "invalid") != "invalid",
-      try(cidrnetmask(var.subnet_cidr_ranges.databricks_consumption_private_subnet), "invalid") != "invalid",
-      try(cidrnetmask(var.subnet_cidr_ranges.databricks_consumption_public_subnet), "invalid") != "invalid",
     ])
     error_message = "Please specify a valid CIDR range for all subnets."
   }
