@@ -1,4 +1,4 @@
-name: "dptest"
+name: "dptest2"
 environment: "dev"
 tags:
   cost_center: "ABCD5678"

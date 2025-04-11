@@ -243,8 +243,6 @@ object(
       fabric_subnet                         = string
       databricks_engineering_private_subnet = string
       databricks_engineering_public_subnet  = string
-      databricks_consumption_private_subnet = string
-      databricks_consumption_public_subnet  = string
     }
   )
 ```

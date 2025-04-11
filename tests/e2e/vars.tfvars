@@ -27,12 +27,12 @@ zone_redundancy_enabled = false
 log_analytics_workspace_id = "/subscriptions/64d97042-a8b5-4033-b2d1-4bbda40c8a91/resourceGroups/chk-dev-logging-rg/providers/Microsoft.OperationalInsights/workspaces/chk-dev-log001"
 
 # Identity variables
-service_principal_name_terraform_plan = "chk-dev-uai001-dlz-tfplan"
+service_principal_name_terraform_plan = "chk-dev-uai001-dlz-tfdeploy"
 
 # Network variables
-vnet_id        = "/subscriptions/64d97042-a8b5-4033-b2d1-4bbda40c8a91/resourceGroups/chk-dev-networking-rg/providers/Microsoft.Network/virtualNetworks/spoke-chk-dev-vnet001"
-nsg_id         = "/subscriptions/64d97042-a8b5-4033-b2d1-4bbda40c8a91/resourceGroups/chk-dev-networking-rg/providers/Microsoft.Network/networkSecurityGroups/spoke-chk-dev-vnet001-default-nsg-westus3"
-route_table_id = "/subscriptions/64d97042-a8b5-4033-b2d1-4bbda40c8a91/resourceGroups/chk-dev-networking-rg/providers/Microsoft.Network/routeTables/chk-dev-default-rt001"
+vnet_id        = "/subscriptions/03da348d-7793-48f5-8985-399e90218d0c/resourceGroups/chk-dev-networking-rg/providers/Microsoft.Network/virtualNetworks/spoke-chk-dev-vnet002"
+nsg_id         = "/subscriptions/03da348d-7793-48f5-8985-399e90218d0c/resourceGroups/chk-dev-networking-rg/providers/Microsoft.Network/networkSecurityGroups/spoke-chk-dev-vnet001-default-nsg-westus3"
+route_table_id = "/subscriptions/03da348d-7793-48f5-8985-399e90218d0c/resourceGroups/chk-dev-networking-rg/providers/Microsoft.Network/routeTables/chk-dev-default-rt001"
 subnet_cidr_ranges = {
   storage_subnet                        = "10.2.0.0/27"
   fabric_subnet                         = "10.2.0.32/27"
