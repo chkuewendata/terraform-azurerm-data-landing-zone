@@ -1,5 +1,5 @@
 module "databricks_workspace_engineering" {
-  source = "github.com/PerfectThymeTech/terraform-azurerm-modules//modules/databricksworkspace?ref=main"
+  source = "github.com/chkuewendata/terraform-azurerm-modules//modules/databricksworkspace?ref=main"
   providers = {
     azurerm = azurerm
     time    = time

@@ -10,8 +10,6 @@ resource "azapi_update_resource" "virtual_network" {
           local.subnet_fabric,
           local.subnet_engineering_private,
           local.subnet_engineering_public,
-          local.subnet_consumption_private,
-          local.subnet_consumption_public,
         ],
         local.subnets_private_endpoint_applications,
         # local.subnets_databricks_private_applications,
