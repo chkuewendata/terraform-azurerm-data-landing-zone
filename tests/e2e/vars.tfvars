@@ -35,9 +35,9 @@ nsg_id         = "/subscriptions/03da348d-7793-48f5-8985-399e90218d0c/resourceGr
 route_table_id = "/subscriptions/03da348d-7793-48f5-8985-399e90218d0c/resourceGroups/chk-dev-networking-rg/providers/Microsoft.Network/routeTables/chk-dev-default-rt002"
 subnet_cidr_ranges = {
   storage_subnet                        = "10.2.0.0/27"
-  fabric_subnet                         = "10.2.0.32/27"
-  databricks_engineering_private_subnet = "10.2.0.128/25"
-  databricks_engineering_public_subnet  = "10.2.1.0/25"
+  fabric_subnet                         = "10.2.1.0/27"
+  databricks_engineering_private_subnet = "10.2.2.0/25"
+  databricks_engineering_public_subnet  = "10.2.3.0/25"
 }
 
 # DNS variables

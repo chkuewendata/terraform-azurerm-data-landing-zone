@@ -71,7 +71,7 @@ data_factory:
   enabled: true
 
 fabric:
-  enabled: true
+  enabled: false
 
 #private_endpoints:
 #  stg:
