@@ -1,4 +1,4 @@
-name: "dptest1"
+name: "ckapp1"
 environment: "dev"
 tags:
   cost_center: "ABCD1234"
