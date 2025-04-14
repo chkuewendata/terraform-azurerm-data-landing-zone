@@ -1,0 +1,18 @@
+name: Data Landing Zone Deployment
+on:
+  workflow_dispatch:
+
+jobs:
+  terraform_destroy:
+    uses: ./.github/workflows/_terraformDestroyTemplate.yml
+    name: "Terraform Destroy"
+    with:
+      environment: "dev"
+      terraform_version: "1.10.4"
+      node_version: 20
+      working_directory: "./tests/e2e"
+      tenant_id: "95878d2e-5f12-487f-b454-aa5fe0db12a2"
+      subscription_id: "03da348d-7793-48f5-8985-399e90218d0c"
+      databricks_account_id: "1745545a-55c6-40c6-bccb-24f60b1b24b6"
+    secrets:
+      CLIENT_ID: ${{ secrets.CLIENT_ID }}
