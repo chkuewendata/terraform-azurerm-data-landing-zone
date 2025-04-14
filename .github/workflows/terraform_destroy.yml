@@ -1,4 +1,4 @@
-name: Data Landing Zone Deployment
+name: Data Landing Zone Destroy
 on:
   workflow_dispatch:
 
