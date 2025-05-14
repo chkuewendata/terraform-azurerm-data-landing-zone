@@ -41,14 +41,14 @@ subnet_cidr_ranges = {
 }
 
 # DNS variables
-#private_dns_zone_id_blob              = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"
-#private_dns_zone_id_dfs               = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.dfs.core.windows.net"
-#private_dns_zone_id_vault             = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
-#private_dns_zone_id_databricks        = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.azuredatabricks.net"
-#private_dns_zone_id_cognitive_account = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com"
-#private_dns_zone_id_open_ai           = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.openai.azure.com"
-#private_dns_zone_id_data_factory      = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.datafactory.azure.net"
-#private_dns_zone_id_search_service    = "/subscriptions/e82c5267-9dc4-4f45-ac13-abdd5e130d27/resourceGroups/chk-dev-privatedns-rg/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net"
+private_dns_zone_id_blob              = ""
+private_dns_zone_id_dfs               = ""
+private_dns_zone_id_vault             = ""
+private_dns_zone_id_databricks        = ""
+private_dns_zone_id_cognitive_account = ""
+private_dns_zone_id_open_ai           = ""
+private_dns_zone_id_data_factory      = ""
+private_dns_zone_id_search_service    = ""
 
 # Customer-managed key variables
 customer_managed_key = null
